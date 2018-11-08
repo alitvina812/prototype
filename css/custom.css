@@ -64,10 +64,7 @@ body {
 }
 
 .bars__container {
-  width: calc(100% - 40px);
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
   /* @keyframes bar-before{
     0%{
       width: 0px;
@@ -77,38 +74,20 @@ body {
     }
   } */
 }
-.bars__container .bar {
+.bars__container .bar__empty {
   height: 30px;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto 10px auto;
   line-height: 30px;
   font-size: 16px;
   color: white;
-  padding: 0 0 0 10px;
   position: relative;
+  background-color: lightgray;
 }
-.bars__container .bar::before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  height: 30px;
-  top: 0;
-  z-index: -2;
-  background: #ecf0f1;
-}
-.bars__container .bar::after {
-  content: "";
-  background: #2ecc71;
-  height: 30px;
-  transition: 0.7s;
+.bars__container .bar__empty .bar__full {
   display: block;
-  /* width: 0%; */
-  /* animation: bar-before 1 1.8s; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-color: green;
+  height: 100%;
 }
 .bars__container #sym1::after,
 .bars__container #sym2::after,
@@ -150,6 +129,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.timer__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: lightgray;
+}
+.timer__container .timer {
+  height: 0.5rem;
+  width: 60%;
+  background-color: red;
 }
 
 /*# sourceMappingURL=custom.css.map */
