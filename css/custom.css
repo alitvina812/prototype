@@ -1,3 +1,155 @@
+html,
+body {
+  overflow: hidden;
+}
 
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.section {
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  padding-top: 0.5rem;
+}
+.section.screen__game {
+  padding: 1rem;
+}
+.button-start {
+  width: 100%;
+  background-color: green;
+  font-size: 2rem;
+}
+.button-start:hover {
+  background-color: darkgreen;
+}
+
+.button-info {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+.button-clear {
+  width: 100%;
+}
+
+.logo--start {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-image: url(../assets/logo_big_color.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.logo--start img {
+  opacity: 0;
+}
+
+.bars__container {
+  width: calc(100% - 40px);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  /* @keyframes bar-before{
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 100%;
+    }
+  } */
+}
+.bars__container .bar {
+  height: 30px;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.bars__container .bar::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 30px;
+  top: 0;
+  z-index: -2;
+  background: #ecf0f1;
+}
+.bars__container .bar::after {
+  content: "";
+  background: #2ecc71;
+  height: 30px;
+  transition: 0.7s;
+  display: block;
+  /* width: 0%; */
+  /* animation: bar-before 1 1.8s; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bars__container #sym1::after,
+.bars__container #sym2::after,
+.bars__container #sym3::after,
+.bars__container #sym4::after,
+.bars__container #sym5::after {
+  max-width: 100%;
+}
+
+.canvas__container {
+  width: 100%;
+  height: 55vh;
+}
+.canvas__container .canvas {
+  width: 100%;
+  height: 95%;
+  border: 1px solid green;
+}
+
+.info__container {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1.5rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.info__container.active {
+  display: block;
+}
+.info__container .info {
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*# sourceMappingURL=custom.css.map */
