@@ -31,7 +31,7 @@ body {
 }
 .button-start {
   width: 100%;
-  background-color: green;
+  background-color: #7ed957;
   font-size: 2rem;
 }
 .button-start:hover {
@@ -86,15 +86,8 @@ body {
 }
 .bars__container .bar__empty .bar__full {
   display: block;
-  background-color: green;
+  background-color: #7ed957;
   height: 100%;
-}
-.bars__container #sym1::after,
-.bars__container #sym2::after,
-.bars__container #sym3::after,
-.bars__container #sym4::after,
-.bars__container #sym5::after {
-  max-width: 100%;
 }
 
 .canvas__container {
@@ -104,7 +97,7 @@ body {
 .canvas__container .canvas {
   width: 100%;
   height: 95%;
-  border: 1px solid green;
+  border: 1px solid #7ed957;
 }
 
 .info__container {
@@ -141,7 +134,7 @@ body {
 .timer__container .timer {
   height: 0.5rem;
   width: 60%;
-  background-color: green;
+  background-color: #7ed957;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -11,7 +11,7 @@
         background-color: lightgray;
         .bar__full {
           display: block;
-          background-color: green;
+          background-color: $green;
           // width: 50%;
           height: 100%;
         } 
@@ -26,11 +26,5 @@
           width: 100%;
         }
       } */
-      #sym1::after,
-      #sym2::after,
-      #sym3::after,
-      #sym4::after,
-      #sym5::after{
-        max-width: 100%;
-      }
+
 }
