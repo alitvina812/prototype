@@ -14,17 +14,18 @@
           background-color: $green;
           // width: 50%;
           height: 100%;
+          animation: bar-before 3s;
         } 
         
       }
     
-      /* @keyframes bar-before{
+       @keyframes bar-before{
         0%{
           width: 0px;
         }
         100%{
           width: 100%;
         }
-      } */
+      } 
 
 }
